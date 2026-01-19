@@ -1,13 +1,15 @@
-
 import React, { useState, useEffect, useCallback } from 'react';
+
 import { AuthView } from './components/Auth';
 import { Sidebar } from './components/Sidebar';
 import { Dashboard } from './components/Dashboard';
 import { Profile } from './components/Profile';
 import { TopicDetails } from './components/TopicDetails';
 import { FilteredCollection } from './components/FilteredCollection';
+
 import { mockApi } from './services/api';
 import { AuthState, User, Topic } from './types';
+
 import { Toaster, toast } from 'react-hot-toast';
 
 const App: React.FC = () => {
@@ -129,5 +131,6 @@ const App: React.FC = () => {
     </div>
   );
 };
+
 
 export default App;
